@@ -1,0 +1,29 @@
+.gameOverviewDetails > img, h3, p{
+	display: inline-block;
+}
+
+.gameOverviewDetails > img{
+	position: relative;
+	top: 2vh;
+	padding: 20px;
+	background-color: white;
+}
+
+.gameOverviewDetails{
+	width: 100%;
+	height: 30vh;
+	margin-top: 5vh;
+	background-color: black;
+}
+
+.gameImages{
+	height: 20vh;
+	margin-left: 2vw;
+}
+
+.gameOverviewDetails > h3, p{
+	color: #CAE9FF;
+	position: relative;
+	bottom: 10vh;
+	margin-left: 2vw;
+}

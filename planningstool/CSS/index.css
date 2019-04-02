@@ -1,0 +1,62 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+#placefiller{
+	height: 5vh;
+	width: 100%;
+}
+
+#title{
+	background-color: #100C08;
+	height: 5vh;
+}
+
+#title > h2{
+	color: #CAE9FF;
+	line-height: 5vh;
+	margin-left: 2vw;
+}
+
+#image{
+	height: 70vh;
+	width: 100%;
+}
+
+.hourField{
+	width: 100%;
+	height: 30vh;
+	background-color: #100C08;
+	margin-top: 5vh;
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
+
+.hourField > h2{
+	grid-column-start: 1;
+	grid-column-end: 1;
+	color: #CAE9FF;
+	margin-left: 2vw;
+	padding-top: 2vh;
+	z-index: 2;
+}
+
+.hourField > img{
+	grid-column-start: 1;
+	grid-column-end: 1;
+	background-color: red;
+	width: 100%;
+	height: 30vh;
+	position: relative;
+	bottom: 5.9vh;
+}
+
+.hourField > p{
+	grid-column-start: 2;
+	grid-column-end: 2;
+	color: #CAE9FF;
+	margin-left: 2vw;
+	margin-top: 5vh;
+}
