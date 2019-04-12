@@ -1,0 +1,87 @@
+.gameImage{
+	height: 50vh;
+	margin-left: 2vw;
+	margin-top: 1vh;
+	margin-bottom: 2vh;
+	padding: 20px;
+	background-color: white;
+}
+
+.title{
+	margin-top: 2vh;
+	margin-left: 2vw;
+	padding-top: 1vh;
+}
+
+.text{
+	float: right;
+	width: 35vw;
+	margin-right: 2vw;
+}
+
+.extraInfo{
+	margin-top: 2vh;
+	margin-left: 2vw;
+}
+
+.block{
+	background-color: #dddddd;
+	margin-bottom: 5vh;
+}
+
+.youtube{
+	text-align: center;
+}
+
+.blockExtension{
+	padding-bottom: 5vh;
+	padding-top: 1vh;
+}
+
+.link{
+	position: relative;
+	top: 2vh;
+	left: 2vw;
+}
+
+.inputBox{
+	padding-top: 1vh;
+	margin-left: 2vw;
+}
+
+.bevestig{
+	margin-top: 2vh;
+	margin-left: 2vw;
+	padding-bottom: 2vh;
+}
+
+.input{
+	margin-top: 2vh;
+}
+
+.error{
+    position: relative;
+    top: 0.5vh;
+	color: red;
+}
+
+.toegevoegt{
+	width: 69vw;
+	height: 5vh;
+	background-color: lightgreen;
+	border: solid darkgreen 0.5vw;
+	text-align: center;
+	line-height: 5vh;
+	color: darkgreen;
+	margin-top: -3vh;
+}
+
+.mislukt{
+	width: 69vw;
+	height: 5vh;
+	background-color: red;
+	border: solid darkred 0.5vw;
+	text-align: center;
+	line-height: 5vh;
+	margin-top: -3vh;
+}

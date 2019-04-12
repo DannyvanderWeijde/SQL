@@ -4,18 +4,34 @@
 	font-family: 'Raleway', sans-serif;
 }
 
+body{
+	width: 70vw;
+	margin: 0 auto;
+}
+
+footer{
+	text-align: center;
+	width: 100%;
+	height: 5vh;
+	background-color: #dddddd;
+	line-height: 5vh;	
+}
+
 #placefiller{
 	height: 5vh;
 	width: 100%;
 }
 
+.placeFillerExtension{
+	margin-bottom: 5vh; 
+}
+
 #title{
-	background-color: #100C08;
+	background-color: #dddddd;
 	height: 5vh;
 }
 
 #title > h2{
-	color: #CAE9FF;
 	line-height: 5vh;
 	margin-left: 2vw;
 }
@@ -25,38 +41,100 @@
 	width: 100%;
 }
 
+#grid{
+	margin-bottom: 5vh;
+}
+
 .hourField{
-	width: 100%;
+	width: 70vw;
 	height: 30vh;
-	background-color: #100C08;
+	background-color: #dddddd;
 	margin-top: 5vh;
+	margin-bottom: 5vh;
 	display: grid;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 20% 15% 15% 15% 15% 15% 2.5% 2.5%;
 }
 
-.hourField > h2{
+.column1{
 	grid-column-start: 1;
 	grid-column-end: 1;
-	color: #CAE9FF;
-	margin-left: 2vw;
-	padding-top: 2vh;
-	z-index: 2;
+	margin-top: 1vh;
 }
 
-.hourField > img{
-	grid-column-start: 1;
-	grid-column-end: 1;
-	background-color: red;
-	width: 100%;
-	height: 30vh;
-	position: relative;
-	bottom: 5.9vh;
-}
-
-.hourField > p{
+.column2{
 	grid-column-start: 2;
 	grid-column-end: 2;
-	color: #CAE9FF;
+	margin-top: 1vh;
+}
+
+.column3{
+	grid-column-start: 3;
+	grid-column-end: 3;
+	margin-top: 1vh;
+}
+
+.column4{
+	grid-column-start: 4;
+	grid-column-end: 4;
+	margin-top: 1vh;
+}
+
+.column5{
+	grid-column-start: 5;
+	grid-column-end: 5;
+	margin-top: 1vh;
+}
+
+.column6{
+	grid-column-start: 6;
+	grid-column-end: 6;
+	margin-top: 1vh;
+}
+
+.edit{
+	grid-column-start: 7;
+	grid-column-end: 7;
+	margin-top: 1vh;
+	color: black;
+}
+
+.delete{
+	grid-column-start: 8;
+	grid-column-end: 8;
+	margin-top: 1vh;
+	color: black;
+}
+
+.hourField > h1{
 	margin-left: 2vw;
-	margin-top: 5vh;
+}
+
+.block{
+	background-color: #dddddd;
+	margin-bottom: 5vh;
+}
+
+.warning{
+	text-align: center;
+	padding-top: 2vh;
+	padding-bottom: 2vh;
+}
+
+.itemDeleted{
+	text-align: center;
+	padding-bottom: 5vh;
+	padding-top: 5vh;
+}
+
+.button{
+	display: inline-block;
+	background-color: white;
+	margin-top: 2vh;
+	width: 4vw;
+	height: 5vh;
+	line-height: 5vh;
+}
+
+.button > a{
+	color: black;
 }

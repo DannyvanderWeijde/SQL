@@ -16,11 +16,11 @@
 
 	# PRDO QUERY
 
-	// $statement = $pdo->query("SELECT * FROM Tabel");
+	$statement = $pdo->query("SELECT * FROM Tabel");
 	
-	// while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
-	// 	echo $row["name"] . "<br>";
-	// }
+	while ($row = $statement->fetch(PDO::FETCH_ASSOC)){
+		echo $row["name"] . "<br>";
+	}
 
 	// while ($row = $statement->fetch(PDO::FETCH_OBJ)){
 	// 	echo $row->name . "<br>";
@@ -71,10 +71,10 @@
 
 	//FETCH SINGLE POST
 
-	// $sql = "SELECT * FROM Tabel WHERE id = :id";
-	// $statement = $pdo->prepare($sql);
-	// $statement->execute(["id" => $id]); 
-	// $post = $statement->fetch();
+	$sql = "SELECT * FROM Tabel WHERE id = :id";
+	$statement = $pdo->prepare($sql);
+	$statement->execute(["id" => $id]); 
+	$post = $statement->fetch();
 
 	// echo $post->body;
 
@@ -90,13 +90,13 @@
 
 	// INSERT DATA
 
-	// $name = "Test 5";
-	// $body = "Dit is test vijf";
-	// $author = "Willem";
+	$name = "Test 5";
+	$body = "Dit is test vijf";
+	$author = "Willem";
 
-	// $sql = "INSERT INTO Tabel(name,body,author) VALUES(:name, :body, :author)";
-	// $statement = $pdo->prepare($sql);
-	// $statement->execute(["name" => $name, "body" => $body, "author" => $author]);
+	$sql = "INSERT INTO Tabel(name,body,author) VALUES(:name, :body, :author)";
+	$statement = $pdo->prepare($sql);
+	$statement->execute(["name" => $name, "body" => $body, "author" => $author]);
 
 	// echo "post added";
 
@@ -106,10 +106,9 @@
 	// $id = 1;
 	// $body = "Dit item is geupdate";
 
-	// $sql = "UPDATE Tabel SET body = :body WHERE
-	//  id = :id";
-	// $statement = $pdo->prepare($sql);
-	// $statement->execute(["body" => $body, "id" => $id]);
+	$sql = "UPDATE Tabel SET body = :body, tijd = :tijd WHERE id = :id";
+	$statement = $pdo->prepare($sql);
+	$statement->execute(["body" => $body, "id" => $id]);
 
 	// echo "post updated";
 

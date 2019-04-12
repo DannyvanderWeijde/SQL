@@ -4,26 +4,37 @@
 
 .gameOverviewDetails > img{
 	position: relative;
-	top: 2vh;
-	padding: 20px;
+	top: 1.1vh;
+	padding: 10px;
 	background-color: white;
 }
 
 .gameOverviewDetails{
 	width: 100%;
-	height: 30vh;
-	margin-top: 5vh;
-	background-color: black;
+	height: 20vh;
+	margin-bottom: 5vh;
+	background-color: #dddddd;
+	transition: 0.5s;
 }
 
 .gameImages{
-	height: 20vh;
+	height: 15vh;
 	margin-left: 2vw;
 }
 
 .gameOverviewDetails > h3, p{
-	color: #CAE9FF;
 	position: relative;
-	bottom: 10vh;
-	margin-left: 2vw;
+	bottom: 7vh;
+	margin-left: 0.5vw;
+}
+
+.detailLink{
+	width: 70vw;
+	height: 20vh;
+	position: absolute;
+	z-index: 2;
+}
+
+.gameOverviewDetails:hover{
+	background-color: #aaaaaa;
 }
